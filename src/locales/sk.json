@@ -25,19 +25,23 @@
   "approach": {
     "title": "Ako pracujem",
     "p1": "Najprv plánujem, potom staviam. Asi viac, než je zdravé — viem stráviť hodiny rozhodovaním, čo presne má daná vec byť, ešte predtým, než napíšem jediný riadok. Znie to zdĺhavo. Znamená to, že málokedy musím prácu zahodiť.",
-    "p2": "Nie som vývojár, čo vymýšľa už vymyslené. Keď existuje dobrá knižnica, použijem ju. Keď neexistuje, napíšem ju poriadne a nenechám za sebou neporiadok. Čistý kód, žiadny balast, nič, čo tam je len naoko.",
-    "p3": "Na čo sa dá naozaj spoľahnúť: dokončím, čo začnem. Termíny držím. Keď sa niečo pokazí, nerobím drámu — proste to opravím. Stále sa zlepšujem a viem o tom. Ale tie veci, na ktorých v tíme záleží — že prídem, že odovzdám, že sa so mnou dá vyjsť — o tie strach mať nemusíš."
+    "p2": "Nie som vývojár, čo vymýšľa už vymyslené. Keď existuje dobrá knižnica, použijem ju. Keď neexistuje, napíšem to poriadne a nenechám za sebou neporiadok. Čistý kód, žiadny balast, nič, čo tam je len naoko.",
+    "p3": "Na čo sa dá naozaj spoľahnúť: dokončím, čo začnem. Termíny držím. Keď sa niečo pokazí, nerobím drámu — proste to opravím. Stále sa zlepšujem a viem o tom. Ale tie veci, na ktorých v tíme záleží — že prídem, že odovzdám, že sa so mnou dá vyjsť — o tie strach mať nemusíte."
   },
   "about": {
     "title": "Mimo práce",
-    "p1": "Žijem v Prahe, pôvodom z Bratislavy. Píšem — kedysi viac, väčšinou humor, ten typ, kde sa z robotického vysávača stane osobný nepriateľ. Časť toho inštinktu skončila aj tu, v tom, ako tieto stránky znejú.",
-    "p2": "Varím poriadne. Robím playlisty tak, ako si iní píšu denník. Mám rád jednu teplú lampu v rohu a žiadne svetlo zhora — čo je, ako som teraz zistil, zhodou okolností aj spôsob, akým navrhujem.",
-    "p3": "To je celé. Žiadne veľké poslanie. Ak si dočítal až sem, asi už vieš, či by sme si sadli."
+    "p1": "Žijem v Prahe, no pôvodom som z Bratislavy. Milujem písať semi-vtipné posty na Instagram. Časť toho inštinktu skončila aj tu, v tom, ako táto stránka znie.",
+    "p2": "Rád varím. Robím playlisty tak, ako si iní píšu denník. Mám rád jednu warm light lampu v rohu a žiadne svetlo zhora — čo je, ako som teraz zistil, zhodou okolností aj spôsob, akým navrhujem.",
+    "p3": "To je celé. Nič okázalé. Ak ste dočítali až sem, asi už viete, či by sme si sadli."
   },
   "contact": {
     "title": "Ozvi sa",
     "line": "Otvorený remote frontend práci. Ak je projekt zaujímavý a stack moderný, napíš mi.",
     "email": "marekzska@gmail.com",
     "github": "GitHub"
+  },
+  "a11y": {
+    "skip": "Preskočiť na obsah",
+    "newTab": "(otvorí sa v novej karte)"
   }
 }

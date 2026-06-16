@@ -1,10 +1,10 @@
 import { motion, useReducedMotion, type Variants } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
-import { EASE, HERO_DURATION, HERO_RISE, REVEAL_STAGGER } from '@/lib/motion'
+import { EASE, HERO_DELAY, HERO_DURATION, HERO_RISE, REVEAL_STAGGER } from '@/lib/motion'
 
 const container: Variants = {
   hidden: {},
-  shown: { transition: { staggerChildren: REVEAL_STAGGER, delayChildren: 0.1 } },
+  shown: { transition: { staggerChildren: REVEAL_STAGGER, delayChildren: HERO_DELAY } },
 }
 
 const item: Variants = {

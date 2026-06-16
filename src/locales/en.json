@@ -39,5 +39,9 @@
     "line": "Open to remote front-end work. If the project's interesting and the stack is modern, write to me.",
     "email": "marekzska@gmail.com",
     "github": "GitHub"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "newTab": "(opens in a new tab)"
   }
 }

@@ -52,6 +52,11 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
+
+  :focus-visible {
+    outline: 2px solid var(--color-ember);
+    outline-offset: 2px;
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {

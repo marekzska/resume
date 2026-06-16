@@ -1,30 +1,31 @@
 import { MotionConfig } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Spotlight } from '@/components/Spotlight'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Work } from '@/components/Work'
-
-const PLACEHOLDERS = [
-  { id: 'approach', label: 'Approach' },
-  { id: 'about', label: 'About' },
-  { id: 'contact', label: 'Contact' },
-]
+import { ProseSection } from '@/components/ProseSection'
+import { Contact } from '@/components/Contact'
 
 function App() {
+  const { t } = useTranslation()
+
   return (
     <MotionConfig reducedMotion="user">
+      <a
+        href="#main"
+        className="sr-only font-sans text-small text-parchment focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-canvas focus:px-4 focus:py-2"
+      >
+        {t('a11y.skip')}
+      </a>
       <Spotlight />
       <Header />
-      <main>
+      <main id="main">
         <Hero />
         <Work />
-        {PLACEHOLDERS.map((section) => (
-          <section key={section.id} id={section.id} className="px-gutter py-section">
-            <div className="mx-auto max-w-6xl">
-              <p className="font-display text-h1 text-muted/40">{section.label}</p>
-            </div>
-          </section>
-        ))}
+        <ProseSection ns="approach" />
+        <ProseSection ns="about" />
+        <Contact />
       </main>
     </MotionConfig>
   )
