@@ -35,12 +35,14 @@ export function useSpotlight() {
       raf = requestAnimationFrame(tick)
     }
 
+    root.classList.add('spotlight-live')
     window.addEventListener('pointermove', onMove, { passive: true })
     raf = requestAnimationFrame(tick)
 
     return () => {
       cancelAnimationFrame(raf)
       window.removeEventListener('pointermove', onMove)
+      root.classList.remove('spotlight-live')
     }
   }, [reduced])
 }

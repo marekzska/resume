@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Reveal } from '@/components/Reveal'
 import { Button } from '@/components/Button'
 import { work } from '@/data/work'
+import { useMagnetic } from '@/hooks/useMagnetic'
 import { REVEAL_STAGGER } from '@/lib/motion'
 
 const EMAIL = 'marekzska@gmail.com'
@@ -10,19 +11,20 @@ const GITHUB_URL = 'https://github.com/marekzska'
 
 export function Contact() {
   const { t } = useTranslation()
+  const magneticRef = useMagnetic<HTMLAnchorElement>()
 
   return (
     <section id="contact" className="px-gutter py-section">
       <div className="mx-auto max-w-6xl">
-        <Reveal>
-          <h2 className="font-display text-h1 text-parchment">{t('contact.title')}</h2>
+        <Reveal rise={false}>
+          <h2 className="lit font-display text-h1">{t('contact.title')}</h2>
         </Reveal>
         <Reveal delay={REVEAL_STAGGER}>
           <p className="mt-6 max-w-2xl font-sans text-lead text-muted">{t('contact.line')}</p>
         </Reveal>
         <Reveal delay={REVEAL_STAGGER * 2}>
           <div className="mt-10">
-            <Button href={`mailto:${EMAIL}`}>
+            <Button ref={magneticRef} href={`mailto:${EMAIL}`}>
               <Mail aria-hidden className="size-4" />
               {t('contact.email')}
             </Button>
@@ -36,7 +38,7 @@ export function Contact() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={`${t('contact.github')} ${t('a11y.newTab')}`}
-                className="text-muted transition-colors hover:text-parchment"
+                className="link-underline text-muted transition-colors hover:text-parchment"
               >
                 {t('contact.github')}
               </a>
@@ -48,7 +50,7 @@ export function Contact() {
                   target="_blank"
                   rel="noreferrer"
                   aria-label={`${item.name} ${t('a11y.newTab')}`}
-                  className="text-muted transition-colors hover:text-parchment"
+                  className="link-underline text-muted transition-colors hover:text-parchment"
                 >
                   {item.name}
                 </a>

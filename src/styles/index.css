@@ -38,6 +38,10 @@
 :root {
   --mx: 50%;
   --my: 30%;
+  --spotlight-radius: 30rem;
+  --grain-opacity: 0.04;
+  --vignette-edge: color-mix(in srgb, transparent, #000 28%);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @layer base {
@@ -63,4 +67,54 @@
   html {
     scroll-behavior: smooth;
   }
+}
+
+.lit {
+  color: var(--color-parchment);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .spotlight-live .lit {
+    background: radial-gradient(
+        circle var(--spotlight-radius) at var(--mx) var(--my),
+        var(--color-parchment),
+        var(--color-muted)
+      )
+      fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.link-underline {
+  position: relative;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -0.15em;
+  height: 1px;
+  background-color: var(--color-ember);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s var(--ease);
+}
+
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline::after {
+    transition: none;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.35s;
 }

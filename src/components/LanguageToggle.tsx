@@ -1,5 +1,7 @@
+import { flushSync } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/cn'
+import { withViewTransition } from '@/lib/viewTransition'
 
 const LANGS = [
   { code: 'en', label: 'EN' },
@@ -9,6 +11,15 @@ const LANGS = [
 export function LanguageToggle() {
   const { i18n } = useTranslation()
   const current = i18n.resolvedLanguage
+
+  const switchTo = (code: string) => {
+    if (code === current) return
+    withViewTransition(() => {
+      flushSync(() => {
+        i18n.changeLanguage(code)
+      })
+    })
+  }
 
   return (
     <div className="flex items-center gap-2 font-sans text-small">
@@ -21,7 +32,7 @@ export function LanguageToggle() {
           )}
           <button
             type="button"
-            onClick={() => i18n.changeLanguage(lang.code)}
+            onClick={() => switchTo(lang.code)}
             aria-pressed={current === lang.code}
             className={cn(
               'transition-colors',

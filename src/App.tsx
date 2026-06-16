@@ -1,6 +1,7 @@
 import { MotionConfig } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Spotlight } from '@/components/Spotlight'
+import { Atmosphere } from '@/components/Atmosphere'
 import { Header } from '@/components/Header'
 import { Hero } from '@/components/Hero'
 import { Work } from '@/components/Work'
@@ -19,6 +20,7 @@ function App() {
         {t('a11y.skip')}
       </a>
       <Spotlight />
+      <Atmosphere />
       <Header />
       <main id="main">
         <Hero />

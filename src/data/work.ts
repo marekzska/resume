@@ -9,13 +9,13 @@ export const work: Project[] = [
   {
     key: 'askura',
     name: 'Askura',
-    url: 'https://askura.cz',
+    url: 'https://www.askura.cz',
     stack: ['Next.js', 'TypeScript', 'Tailwind', 'CMS'],
   },
   {
     key: 'almiro',
     name: 'Almiro',
-    url: 'https://almiro.sk',
+    url: 'https://www.almiro.org/cs',
     stack: ['Next.js', 'TypeScript', 'i18n', 'Tailwind'],
   },
   {

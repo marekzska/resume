@@ -9,12 +9,12 @@ export function Work() {
   return (
     <section id="work" className="px-gutter py-section">
       <div className="mx-auto max-w-6xl">
-        <Reveal>
-          <h2 className="font-display text-h1 text-parchment">{t('work.title')}</h2>
+        <Reveal rise={false}>
+          <h2 className="lit font-display text-h1">{t('work.title')}</h2>
         </Reveal>
-        <div className="mt-16 space-y-16">
-          {work.map((item) => (
-            <WorkItem key={item.key} item={item} />
+        <div className="mt-12">
+          {work.map((item, index) => (
+            <WorkItem key={item.key} item={item} index={index} />
           ))}
         </div>
       </div>

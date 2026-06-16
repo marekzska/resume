@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 
-export function useScrolled(threshold = 0.8) {
+export function useScrolled(threshold = 16) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > window.innerHeight * threshold)
+      setScrolled(window.scrollY > threshold)
     }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })

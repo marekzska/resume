@@ -19,7 +19,7 @@ export function Header() {
           <a
             key={id}
             href={`#${id}`}
-            className="font-sans text-small text-muted transition-colors hover:text-parchment"
+            className="link-underline font-sans text-small text-muted transition-colors hover:text-parchment"
           >
             {t(`nav.${id}`)}
           </a>
@@ -38,7 +38,7 @@ export function Header() {
           : 'border-transparent',
       )}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-gutter py-5">
+      <div className="mx-auto flex max-w-6xl items-center justify-between py-5">
         <a href="#hero" className="font-display text-body lowercase text-parchment">
           marek žiška
         </a>
