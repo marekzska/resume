@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme static {
+  --color-canvas: #0E0B0C;
+  --color-ember: #B23A48;
+  --color-ember-strong: #C2424E;
+  --color-parchment: #EDE6E0;
+  --color-muted: #8A7E7E;
+
+  --color-ember-glow: color-mix(in srgb, var(--color-ember) 18%, transparent);
+  --color-hairline: color-mix(in srgb, var(--color-parchment) 8%, transparent);
+  --color-canvas-raised: color-mix(in srgb, var(--color-parchment) 3%, var(--color-canvas));
+
+  --font-display: "Fraunces Variable", "Times New Roman", serif;
+  --font-sans: "Geist Variable", Inter, system-ui, sans-serif;
+
+  --text-display: clamp(4.5rem, 10vw, 7rem);
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.02em;
+  --text-h1: clamp(2.5rem, 6vw, 3.5rem);
+  --text-h1--line-height: 1.1;
+  --text-h2: 1.5rem;
+  --text-h2--line-height: 1.2;
+  --text-lead: 1.25rem;
+  --text-lead--line-height: 1.5;
+  --text-body: 1rem;
+  --text-body--line-height: 1.6;
+  --text-small: 0.875rem;
+  --text-small--line-height: 1.5;
+  --text-mono-ish: 0.8125rem;
+  --text-mono-ish--line-height: 1.5;
+  --text-mono-ish--letter-spacing: 0.08em;
+
+  --spacing-section: clamp(6rem, 14vh, 10rem);
+  --spacing-gutter: clamp(1.5rem, 5vw, 4rem);
+}
+
+:root {
+  --mx: 50%;
+  --my: 30%;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-parchment);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

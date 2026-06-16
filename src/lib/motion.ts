@@ -1,0 +1,8 @@
+export const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1]
+export const REVEAL_DURATION = 0.6
+export const REVEAL_RISE = 16
+export const REVEAL_STAGGER = 0.08
+export const HERO_DURATION = 0.8
+export const HERO_RISE = 24
+export const NAV_DELAY = 1.0
+export const NAV_DURATION = 0.4

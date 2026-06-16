@@ -1,0 +1,43 @@
+{
+  "nav": {
+    "work": "Work",
+    "approach": "Approach",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Marek Žiška",
+    "stance": "I build the front end. Faithfully. On time. Without drama."
+  },
+  "work": {
+    "title": "Work",
+    "viewSite": "View site",
+    "askura": {
+      "desc": "A site for a pest-control company — Next.js, CMS-driven blog, built from the designs and shipped end to end. A clean, working website. It does its job."
+    },
+    "almiro": {
+      "desc": "A multilingual site for a fertilizer manufacturer. Internationalization was part of the build — the kind of i18n work I do regularly."
+    },
+    "aplik": {
+      "desc": "A React web app for an industrial client in Slovakia. More going on under the hood than the surface lets on."
+    }
+  },
+  "approach": {
+    "title": "How I work",
+    "p1": "I plan before I build. Probably more than is normal — I'll spend hours deciding exactly what a thing should be before I write a line of it. It sounds tedious. It means I rarely have to throw work away.",
+    "p2": "I'm not the developer who reinvents what already exists. If there's a good library, I use it. If there isn't, I build it carefully and don't leave a mess. Clean code, no clutter, nothing that's there just to look clever.",
+    "p3": "What you can actually count on: I finish what I start. I hit deadlines. I don't make drama when something breaks — I just fix it. I'm still getting better, and I know it. But the parts that matter on a team — showing up, shipping, being easy to work with — those you don't have to worry about."
+  },
+  "about": {
+    "title": "Off the clock",
+    "p1": "I'm based in Prague, originally from Bratislava. I write — used to do it more, comedy mostly, the kind where a robot vacuum becomes a personal enemy. Some of that instinct ended up here, in how this site talks.",
+    "p2": "I cook properly. I make playlists like other people keep diaries. I like one warm lamp in the corner and no overhead lights — which, now that I've built this, is apparently also how I design.",
+    "p3": "That's it. No mission statement. If you've read this far, you probably already know whether we'd get along."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "line": "Open to remote front-end work. If the project's interesting and the stack is modern, write to me.",
+    "email": "marekzska@gmail.com",
+    "github": "GitHub"
+  }
+}
