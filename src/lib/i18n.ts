@@ -24,8 +24,10 @@ i18n
 
 i18n.on('languageChanged', (lng) => {
   document.documentElement.lang = lng
+  document.title = i18n.t('meta.title')
 })
 
 document.documentElement.lang = i18n.resolvedLanguage ?? 'en'
+document.title = i18n.t('meta.title')
 
 export default i18n

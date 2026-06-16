@@ -38,7 +38,7 @@ export function Header() {
           : 'border-transparent',
       )}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between py-5">
+      <div className="mx-auto flex max-w-6xl items-center justify-between py-5 px-gutter lg:px-0">
         <a href="#hero" className="font-display text-body lowercase text-parchment">
           marek žiška
         </a>

@@ -23,7 +23,7 @@ export function ProseSection({ ns }: ProseSectionProps) {
       <span aria-hidden className="block font-display text-h2 tabular-nums text-muted/40">
         {NUMERAL[ns]}
       </span>
-      <p className="mt-3 font-sans text-mono-ish uppercase text-muted">{t(`${ns}.quoteLabel`)}</p>
+      <p className="mt-3 font-sans text-mono-ish uppercase text-gold">{t(`${ns}.quoteLabel`)}</p>
       <p className="mt-4 font-display text-h2 text-parchment lg:text-h1">{t(`${ns}.quote`)}</p>
       <span aria-hidden className={cn('mt-6 block h-px w-12 bg-ember', !flip && 'lg:ml-auto')} />
     </Reveal>

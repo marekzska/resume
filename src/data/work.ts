@@ -19,6 +19,12 @@ export const work: Project[] = [
     stack: ['Next.js', 'TypeScript', 'i18n', 'Tailwind'],
   },
   {
+    key: 'almiro_eshop',
+    name: 'Almiro E-shop',
+    url: 'https://eshop.almiro.cz',
+    stack: ['Next.js', 'TypeScript', 'Tailwind', 'E-commerce'],
+  },
+  {
     key: 'aplik',
     name: 'Aplik',
     url: 'https://aplik.sk',

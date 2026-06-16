@@ -6,6 +6,7 @@
   --color-ember-strong: #C2424E;
   --color-parchment: #EDE6E0;
   --color-muted: #8A7E7E;
+  --color-gold: #C9A15E;
 
   --color-ember-glow: color-mix(in srgb, var(--color-ember) 18%, transparent);
   --color-hairline: color-mix(in srgb, var(--color-parchment) 8%, transparent);
@@ -33,6 +34,8 @@
 
   --spacing-section: clamp(6rem, 14vh, 10rem);
   --spacing-gutter: clamp(1.5rem, 5vw, 4rem);
+
+  --radius-cta: 0.625rem;
 }
 
 :root {

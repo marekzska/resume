@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "title": "Marek Žiška — Frontend vývojár"
+  },
   "nav": {
     "work": "Práca",
     "approach": "Prístup",
@@ -13,13 +16,16 @@
     "title": "Práca",
     "viewSite": "Pozrieť stránku",
     "askura": {
-      "desc": "Stránka pre firmu na deratizáciu a dezinsekciu — Next.js, blog cez CMS, postavená podľa návrhov a dotiahnutá od začiatku do konca. Čistá, funkčná stránka. Robí, čo má."
+      "desc": "Stránka pre firmu na deratizáciu a dezinsekciu — Next.js, blog cez CMS. Postavil som ju sám, podľa návrhov a od začiatku do konca. Čistá, funkčná stránka. Robí, čo má."
     },
     "almiro": {
-      "desc": "Viacjazyčná stránka pre výrobcu hnojív. Súčasťou bola aj internacionalizácia — ten typ i18n práce, ktorý robím bežne."
+      "desc": "Viacjazyčná stránka pre výrobcu hnojív, ktorú som postavil sám. Súčasťou bola aj internacionalizácia — ten typ i18n práce, ktorý robím bežne."
+    },
+    "almiro_eshop": {
+      "desc": "Online obchod Almiro — rovnaký klient, iné kafe. Frontend som robil spoluautorsky, v tíme: skutočný e-shop, nie brožúra, kde katalóg a produktové stránky musia zostať rýchle a prehľadné aj pri raste."
     },
     "aplik": {
-      "desc": "React webová aplikácia pre priemyselného klienta na Slovensku. Pod kapotou sa deje viac, než povrch napovedá."
+      "desc": "Frontend pre Aplik — slovenskú firmu, ktorá stavia priemyselné riadiace a energetické systémy: vodárne, malé vodné elektrárne, tú nevďačnú techniku, čo proste musí fungovať. Mojou robotou bola stránka, nie turbíny: React appka, ktorú som postavil sám a ktorá sprehľadní rozsiahle technické portfólio aj pre neinžinierov."
     }
   },
   "approach": {
@@ -34,13 +40,13 @@
     "title": "Mimo práce",
     "quoteLabel": "Celá tá myšlienka",
     "quote": "Jedna lampa v rohu. Žiadne svetlo zhora.",
-    "p1": "Žijem v Prahe, no pôvodom som z Bratislavy. Milujem písať semi-vtipné posty na Instagram. Časť toho inštinktu skončila aj tu, v tom, ako táto stránka znie.",
-    "p2": "Rád varím. Robím playlisty tak, ako si iní píšu denník. Mám rád jednu warm light lampu v rohu a žiadne svetlo zhora — čo je, ako som teraz zistil, zhodou okolností aj spôsob, akým navrhujem.",
+    "p1": "Žijem v Prahe, pôvodom som z Bratislavy. Píšem — kedysi viac, väčšinou komédiu, ten typ, kde sa z robotického vysávača stane osobný nepriateľ. Časť toho inštinktu skončila aj tu, v tom, ako táto stránka rozpráva.",
+    "p2": "Varím poriadne. Robím playlisty tak, ako si iní píšu denník. Mám rád jednu teplú lampu v rohu a žiadne svetlo zhora — čo je, ako som teraz zistil, zhodou okolností aj spôsob, akým navrhujem.",
     "p3": "To je celé. Nič okázalé. Ak ste dočítali až sem, asi už viete, či by sme si sadli."
   },
   "contact": {
     "title": "Ozvi sa",
-    "line": "Otvorený remote frontend práci. Ak je projekt zaujímavý a stack moderný, napíš mi.",
+    "line": "Som otvorený remote frontend práci. Ak je projekt zaujímavý a stack moderný, napíš mi.",
     "email": "marekzska@gmail.com",
     "github": "GitHub"
   },

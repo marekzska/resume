@@ -1,4 +1,7 @@
 {
+  "meta": {
+    "title": "Marek Žiška — Front-End Developer"
+  },
   "nav": {
     "work": "Work",
     "approach": "Approach",
@@ -13,13 +16,16 @@
     "title": "Work",
     "viewSite": "View site",
     "askura": {
-      "desc": "A site for a pest-control company — Next.js, CMS-driven blog, built from the designs and shipped end to end. A clean, working website. It does its job."
+      "desc": "A site for a pest-control company — Next.js, CMS-driven blog, built solo from the designs and shipped end to end. A clean, working website. It does its job."
     },
     "almiro": {
-      "desc": "A multilingual site for a fertilizer manufacturer. Internationalization was part of the build — the kind of i18n work I do regularly."
+      "desc": "A multilingual site for a fertilizer manufacturer, built solo. Internationalization was part of the build — the kind of i18n work I do regularly."
+    },
+    "almiro_eshop": {
+      "desc": "Almiro's online store — the same client, a different beast. I coauthored the front end on a team: a real storefront, not a brochure, where the catalog and product pages have to stay fast and clear as they grow."
     },
     "aplik": {
-      "desc": "A React web app for an industrial client in Slovakia. More going on under the hood than the surface lets on."
+      "desc": "The front end for Aplik, a Slovak firm that builds industrial control and energy systems — water plants, small hydro, the unglamorous machinery that just has to work. My job was the website, not the turbines: a React build, done solo, that makes a deep, technical portfolio legible to people who aren't engineers."
     }
   },
   "approach": {
