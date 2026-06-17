@@ -4,9 +4,6 @@ Tasteful, **reduced-motion-aware** React interaction primitives — a cursor
 spotlight, magnetic hover, scroll reveals, and view-transition helpers. Extracted
 from [marekzska.space](https://marekzska.space) — the site runs on it.
 
-> **Pre-release:** packaged and publish-ready, but not yet on the npm registry.
-> The API below is stable.
-
 - **Accessible by default** — every effect honours `prefers-reduced-motion` and
   bails on coarse (touch) pointers, so you never ship a dead hover affordance.
 - **Owns its physics** — the magnetic pull is clamped and spring-smoothed in JS

@@ -28,7 +28,7 @@
       "desc": "The front end for Aplik, a Slovak firm that builds industrial control and energy systems — water plants, small hydro, the unglamorous machinery that just has to work. My job was the website, not the turbines: a React build, done solo, that makes a deep, technical portfolio legible to people who aren't engineers."
     },
     "warm_motion": {
-      "desc": "A small React motion library — the spotlight, magnetic hover, and scroll reveals from this very site, pulled out and made reusable. Typed, tested, tree-shakeable, reduced-motion-aware, and packaged for npm. The site you're on runs on it."
+      "desc": "A small React motion library — the spotlight, magnetic hover, and scroll reveals from this very site, pulled out and made reusable. Typed, tested, tree-shakeable, reduced-motion-aware, and published to npm. The site you're on runs on it."
     }
   },
   "approach": {

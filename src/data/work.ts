@@ -33,7 +33,7 @@ export const work: Project[] = [
   {
     key: 'warm_motion',
     name: 'warm-motion',
-    url: 'https://github.com/marekzska/resume/tree/main/packages/warm-motion',
+    url: 'https://www.npmjs.com/package/warm-motion',
     stack: ['React', 'TypeScript', 'Vitest', 'npm'],
   },
 ]
