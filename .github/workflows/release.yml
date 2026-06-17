@@ -1,0 +1,28 @@
+name: Release warm-motion
+
+# Publishes the warm-motion package to npm when a GitHub Release is published.
+# Requires a repository secret named NPM_TOKEN (an npm automation token) and the
+# package name to be available/owned on npm.
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # npm provenance
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          registry-url: https://registry.npmjs.org
+      - run: npm ci
+      - run: npm run build:lib
+      - run: npm -w warm-motion run test
+      - run: npm -w warm-motion publish --provenance
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

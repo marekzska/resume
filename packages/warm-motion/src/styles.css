@@ -1,0 +1,40 @@
+/*
+ * warm-motion — stylesheet for the cursor spotlight + view transitions.
+ *
+ * The spotlight lights up any element with the `.lit` class while `useSpotlight`
+ * is active. Map your own text colors onto the two custom properties:
+ *
+ *   :root {
+ *     --wm-spotlight-from: <bright text color>;
+ *     --wm-spotlight-to:   <dim text color>;
+ *   }
+ */
+
+:root {
+  --mx: 50%;
+  --my: 30%;
+  --spotlight-radius: 30rem;
+}
+
+.lit {
+  color: var(--wm-spotlight-from, currentColor);
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .spotlight-live .lit {
+    background: radial-gradient(
+        circle var(--spotlight-radius) at var(--mx) var(--my),
+        var(--wm-spotlight-from, currentColor),
+        var(--wm-spotlight-to, currentColor)
+      )
+      fixed;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.35s;
+}

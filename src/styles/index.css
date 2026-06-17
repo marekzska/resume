@@ -3,7 +3,6 @@
 @theme static {
   --color-canvas: #0E0B0C;
   --color-ember: #B23A48;
-  --color-ember-strong: #C2424E;
   --color-parchment: #EDE6E0;
   --color-muted: #8A7E7E;
   --color-gold: #C9A15E;
@@ -20,7 +19,7 @@
   --text-display--letter-spacing: -0.02em;
   --text-h1: clamp(2.5rem, 6vw, 3.5rem);
   --text-h1--line-height: 1.1;
-  --text-h2: 1.5rem;
+  --text-h2: clamp(1.5rem, 1.2rem + 1.2vw, 2rem);
   --text-h2--line-height: 1.2;
   --text-lead: 1.25rem;
   --text-lead--line-height: 1.5;
@@ -35,16 +34,19 @@
   --spacing-section: clamp(6rem, 14vh, 10rem);
   --spacing-gutter: clamp(1.5rem, 5vw, 4rem);
 
-  --radius-cta: 0.625rem;
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
 }
 
 :root {
-  --mx: 50%;
-  --my: 30%;
-  --spotlight-radius: 30rem;
   --grain-opacity: 0.04;
   --vignette-edge: color-mix(in srgb, transparent, #000 28%);
   --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Map brand text colors onto warm-motion's spotlight (warm-motion/styles.css). */
+  --wm-spotlight-from: var(--color-parchment);
+  --wm-spotlight-to: var(--color-muted);
 }
 
 @layer base {
@@ -69,24 +71,6 @@
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
-  }
-}
-
-.lit {
-  color: var(--color-parchment);
-}
-
-@supports ((-webkit-background-clip: text) or (background-clip: text)) {
-  .spotlight-live .lit {
-    background: radial-gradient(
-        circle var(--spotlight-radius) at var(--mx) var(--my),
-        var(--color-parchment),
-        var(--color-muted)
-      )
-      fixed;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
   }
 }
 
@@ -115,9 +99,4 @@
   .link-underline::after {
     transition: none;
   }
-}
-
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.35s;
 }

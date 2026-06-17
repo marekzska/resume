@@ -15,7 +15,7 @@ function App() {
     <MotionConfig reducedMotion="user">
       <a
         href="#main"
-        className="sr-only font-sans text-small text-parchment focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-md focus:bg-canvas focus:px-4 focus:py-2"
+        className="sr-only font-sans text-small text-parchment focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-sm focus:bg-canvas focus:px-4 focus:py-2"
       >
         {t('a11y.skip')}
       </a>

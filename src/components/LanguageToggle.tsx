@@ -1,7 +1,7 @@
 import { flushSync } from 'react-dom'
 import { useTranslation } from 'react-i18next'
 import { cn } from '@/lib/cn'
-import { withViewTransition } from '@/lib/viewTransition'
+import { withViewTransition } from 'warm-motion'
 
 const LANGS = [
   { code: 'en', label: 'EN' },

@@ -1,4 +1,4 @@
-import { useSpotlight } from '@/hooks/useSpotlight'
+import { useSpotlight } from 'warm-motion'
 
 export function Spotlight() {
   useSpotlight()

@@ -1,0 +1,69 @@
+{
+  "name": "warm-motion",
+  "version": "0.1.0",
+  "description": "Tasteful, reduced-motion-aware React interaction primitives — cursor spotlight, magnetic hover, scroll reveals, view transitions.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Marek Žiška",
+  "homepage": "https://github.com/marekzska/resume/tree/main/packages/warm-motion",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marekzska/resume.git",
+    "directory": "packages/warm-motion"
+  },
+  "keywords": [
+    "react",
+    "animation",
+    "framer-motion",
+    "reduced-motion",
+    "accessibility",
+    "hooks",
+    "spotlight",
+    "magnetic"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/warm-motion.cjs",
+  "module": "./dist/warm-motion.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/warm-motion.js",
+      "require": "./dist/warm-motion.cjs"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "scripts": {
+    "build": "vite build && tsc -p tsconfig.build.json && cp src/styles.css dist/styles.css",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint ."
+  },
+  "peerDependencies": {
+    "framer-motion": ">=11 <13",
+    "react": ">=18 <20",
+    "react-dom": ">=18 <20"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "framer-motion": "^12.40.0",
+    "jsdom": "^25.0.1",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vitest": "^3.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

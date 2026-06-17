@@ -30,4 +30,10 @@ export const work: Project[] = [
     url: 'https://aplik.sk',
     stack: ['React', 'TypeScript', 'Vite'],
   },
+  {
+    key: 'warm_motion',
+    name: 'warm-motion',
+    url: 'https://github.com/marekzska/resume/tree/main/packages/warm-motion',
+    stack: ['React', 'TypeScript', 'Vitest', 'npm'],
+  },
 ]

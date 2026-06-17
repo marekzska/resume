@@ -22,10 +22,13 @@
       "desc": "A multilingual site for a fertilizer manufacturer, built solo. Internationalization was part of the build — the kind of i18n work I do regularly."
     },
     "almiro_eshop": {
-      "desc": "Almiro's online store — the same client, a different beast. I coauthored the front end on a team: a real storefront, not a brochure, where the catalog and product pages have to stay fast and clear as they grow."
+      "desc": "Almiro's online store — same client, bigger machine. Built on a team, but the storefront front end was mine end to end: catalog, product detail, cart. A real shop, not a brochure, where the unglamorous parts have to actually work."
     },
     "aplik": {
       "desc": "The front end for Aplik, a Slovak firm that builds industrial control and energy systems — water plants, small hydro, the unglamorous machinery that just has to work. My job was the website, not the turbines: a React build, done solo, that makes a deep, technical portfolio legible to people who aren't engineers."
+    },
+    "warm_motion": {
+      "desc": "A small React motion library — the spotlight, magnetic hover, and scroll reveals from this very site, pulled out and made reusable. Typed, tested, tree-shakeable, reduced-motion-aware, and published to npm. The site you're on runs on it."
     }
   },
   "approach": {

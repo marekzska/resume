@@ -22,10 +22,13 @@
       "desc": "Viacjazyčná stránka pre výrobcu hnojív, ktorú som postavil sám. Súčasťou bola aj internacionalizácia — ten typ i18n práce, ktorý robím bežne."
     },
     "almiro_eshop": {
-      "desc": "Online obchod Almiro — rovnaký klient, iné kafe. Frontend som robil spoluautorsky, v tíme: skutočný e-shop, nie brožúra, kde katalóg a produktové stránky musia zostať rýchle a prehľadné aj pri raste."
+      "desc": "Online obchod Almiro — rovnaký klient, väčší stroj. Robili sme ho v tíme, ale frontend obchodu bol celý môj: katalóg, detail produktu, košík. Skutočný shop, nie brožúra — tie nevďačné časti, ktoré proste musia fungovať."
     },
     "aplik": {
       "desc": "Frontend pre Aplik — slovenskú firmu, ktorá stavia priemyselné riadiace a energetické systémy: vodárne, malé vodné elektrárne, tú nevďačnú techniku, čo proste musí fungovať. Mojou robotou bola stránka, nie turbíny: React appka, ktorú som postavil sám a ktorá sprehľadní rozsiahle technické portfólio aj pre neinžinierov."
+    },
+    "warm_motion": {
+      "desc": "Malá React knižnica pohybu — spotlight, magnetický hover a scroll reveals z tejto stránky, vytiahnuté a spravené znova použiteľné. Typované, otestované, ohľaduplné k reduced-motion a vydané na npm. Stránka, na ktorej práve ste, beží na nej."
     }
   },
   "approach": {
@@ -45,8 +48,8 @@
     "p3": "To je celé. Nič okázalé. Ak ste dočítali až sem, asi už viete, či by sme si sadli."
   },
   "contact": {
-    "title": "Ozvi sa",
-    "line": "Som otvorený remote frontend práci. Ak je projekt zaujímavý a stack moderný, napíš mi.",
+    "title": "Ozvite sa",
+    "line": "Som otvorený remote frontend práci. Ak je projekt zaujímavý a stack moderný, napíšte mi.",
     "email": "marekzska@gmail.com",
     "github": "GitHub"
   },

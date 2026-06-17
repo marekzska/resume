@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import type { Project } from '@/data/work'
 import { cn } from '@/lib/cn'
-import { Reveal } from '@/components/Reveal'
+import { Reveal } from 'warm-motion'
 import { WorkPreview } from '@/components/WorkPreview'
 
 type WorkItemProps = {

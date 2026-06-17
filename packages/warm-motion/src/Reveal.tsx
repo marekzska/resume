@@ -1,14 +1,20 @@
 import { motion, useReducedMotion, type Variants } from 'framer-motion'
 import type { ReactNode } from 'react'
-import { EASE, REVEAL_DURATION, REVEAL_RISE } from '@/lib/motion'
+import { EASE, REVEAL_DURATION, REVEAL_RISE } from './motion'
 
-type RevealProps = {
+export type RevealProps = {
   children: ReactNode
+  /** Delay (s) before the reveal begins. */
   delay?: number
+  /** Whether the content rises as it fades in. */
   rise?: boolean
   className?: string
 }
 
+/**
+ * Fades (and optionally rises) its children into view once, when scrolled near.
+ * Under reduced motion it renders a plain wrapper with no animation at all.
+ */
 export function Reveal({ children, delay = 0, rise = true, className }: RevealProps) {
   const reduced = useReducedMotion()
 

@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { work } from '@/data/work'
 import { WorkItem } from '@/components/WorkItem'
-import { Reveal } from '@/components/Reveal'
+import { Reveal } from 'warm-motion'
 
 export function Work() {
   const { t } = useTranslation()
