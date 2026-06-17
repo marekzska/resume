@@ -31,7 +31,7 @@ npm run lint
   every shade descends from the base palette.
 - **Motion is a library, not scattered effects.** The cursor spotlight, magnetic
   hover, scroll reveals, and view-transition helper live in `warm-motion` and are
-  imported back into the site — the same code is published and dogfooded.
+  imported back into the site — the same code is packaged for npm and dogfooded.
 - **Accessibility as architecture, not a checkbox.** `prefers-reduced-motion` is
   honoured across every animated surface (each has a real static fallback, not a
   blanket disable), pointer-capability gating means touch users get no dead hover

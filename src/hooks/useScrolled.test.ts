@@ -36,4 +36,12 @@ describe('useScrolled', () => {
     expect(raf).toHaveBeenCalledTimes(1)
     raf.mockRestore()
   })
+
+  it('removes its scroll listener on unmount', () => {
+    const removeSpy = vi.spyOn(window, 'removeEventListener')
+    const { unmount } = renderHook(() => useScrolled(16))
+    unmount()
+    expect(removeSpy).toHaveBeenCalledWith('scroll', expect.any(Function))
+    removeSpy.mockRestore()
+  })
 })

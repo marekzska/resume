@@ -21,6 +21,11 @@ jobs:
           cache: npm
           registry-url: https://registry.npmjs.org
       - run: npm ci
+      - name: Verify release tag matches package version
+        run: |
+          PKG=$(node -p "require('./packages/warm-motion/package.json').version")
+          TAG="${GITHUB_REF_NAME#v}"
+          test "$PKG" = "$TAG" || { echo "::error::release tag $GITHUB_REF_NAME does not match package version $PKG"; exit 1; }
       - run: npm run build:lib
       - run: npm -w warm-motion run test
       - run: npm -w warm-motion publish --provenance

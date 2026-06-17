@@ -71,4 +71,18 @@ describe('useMagnetic', () => {
     pull(btn)
     expect(btn.style.transform).toBe('')
   })
+
+  it('resets the transform and detaches window listeners on unmount', () => {
+    const removeSpy = vi.spyOn(window, 'removeEventListener')
+    const { container, unmount } = render(<Magnet />)
+    const btn = container.querySelector('button')!
+    stubRect(btn)
+    pull(btn)
+    expect(btn.style.transform).toBe('translate(12.00px, 0.00px)')
+
+    unmount()
+    expect(btn.style.transform).toBe('')
+    expect(removeSpy).toHaveBeenCalledWith('pointermove', expect.any(Function))
+    removeSpy.mockRestore()
+  })
 })

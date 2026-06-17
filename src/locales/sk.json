@@ -28,7 +28,7 @@
       "desc": "Frontend pre Aplik — slovenskú firmu, ktorá stavia priemyselné riadiace a energetické systémy: vodárne, malé vodné elektrárne, tú nevďačnú techniku, čo proste musí fungovať. Mojou robotou bola stránka, nie turbíny: React appka, ktorú som postavil sám a ktorá sprehľadní rozsiahle technické portfólio aj pre neinžinierov."
     },
     "warm_motion": {
-      "desc": "Malá React knižnica pohybu — spotlight, magnetický hover a scroll reveals z tejto stránky, vytiahnuté a spravené znova použiteľné. Typované, otestované, ohľaduplné k reduced-motion a vydané na npm. Stránka, na ktorej práve ste, beží na nej."
+      "desc": "Malá React knižnica pohybu — spotlight, magnetický hover a scroll reveals z tejto stránky, vytiahnuté a spravené znova použiteľné. Typované, otestované, ohľaduplné k reduced-motion a pripravená na vydanie na npm. Stránka, na ktorej práve ste, beží na nej."
     }
   },
   "approach": {

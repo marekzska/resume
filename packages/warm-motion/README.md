@@ -2,7 +2,10 @@
 
 Tasteful, **reduced-motion-aware** React interaction primitives — a cursor
 spotlight, magnetic hover, scroll reveals, and view-transition helpers. Extracted
-from [marekzska.space](https://marekzska.space) and used in production there.
+from [marekzska.space](https://marekzska.space) — the site runs on it.
+
+> **Pre-release:** packaged and publish-ready, but not yet on the npm registry.
+> The API below is stable.
 
 - **Accessible by default** — every effect honours `prefers-reduced-motion` and
   bails on coarse (touch) pointers, so you never ship a dead hover affordance.
@@ -86,8 +89,17 @@ primitives use, exported so your own motion can match.
 
 ## Versioning
 
-Semantic versioning. The public surface is the named exports above plus the two
-`--wm-spotlight-*` CSS custom properties.
+Semantic versioning. The public surface is:
+
+- the named JS exports above;
+- the CSS custom properties `--wm-spotlight-from`, `--wm-spotlight-to`, and
+  `--spotlight-radius` (spotlight size, default `30rem`);
+- the `--mx` / `--my` cursor variables written by `useSpotlight` (read them for
+  your own cursor-driven effects);
+- the `.lit` and `.spotlight-live` class names.
+
+These names are intentionally generic — if they collide with your app, scope the
+stylesheet or override them.
 
 ## License
 

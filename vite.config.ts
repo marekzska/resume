@@ -35,6 +35,15 @@ function preloadFonts(): Plugin {
 export default defineConfig({
   plugins: [react(), tailwindcss(), preloadFonts()],
   resolve: {
-    alias: { '@': path.resolve(__dirname, './src') },
+    // Consume the workspace library from source so dev/build never depend on a
+    // prebuilt dist; the published dist is still built+validated for npm.
+    alias: [
+      { find: '@', replacement: path.resolve(__dirname, './src') },
+      {
+        find: /^warm-motion\/styles\.css$/,
+        replacement: path.resolve(__dirname, './packages/warm-motion/src/styles.css'),
+      },
+      { find: /^warm-motion$/, replacement: path.resolve(__dirname, './packages/warm-motion/src/index.ts') },
+    ],
   },
 })
