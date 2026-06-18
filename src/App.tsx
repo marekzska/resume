@@ -1,5 +1,6 @@
 import { MotionConfig } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import { Analytics } from '@vercel/analytics/react'
 import { Spotlight } from '@/components/Spotlight'
 import { Atmosphere } from '@/components/Atmosphere'
 import { Header } from '@/components/Header'
@@ -29,6 +30,7 @@ function App() {
         <ProseSection ns="about" />
         <Contact />
       </main>
+      <Analytics />
     </MotionConfig>
   )
 }
