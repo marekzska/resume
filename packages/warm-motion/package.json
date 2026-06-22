@@ -1,6 +1,6 @@
 {
   "name": "warm-motion",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Tasteful, reduced-motion-aware React interaction primitives — cursor spotlight, magnetic hover, scroll reveals, view transitions.",
   "type": "module",
   "license": "MIT",
